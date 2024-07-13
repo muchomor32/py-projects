@@ -1,0 +1,25 @@
+{% extends 'template.html' %}
+
+{% block content %}
+        <div>
+                <table id="maintable">
+                        <tr>
+                                <th><h1 class="info">Okładka</h1></th>
+                                <th><h1 class="info">Nazwa</h1></th>
+                                <th><h1 class="info">Autor</h1></th>
+                                <th><h1 class="info">Gatunek</h1></th>
+                                <th><h1 class="info">Rodzaj</h1></th>
+                        </tr>
+                {% for i in data %}
+                        <tr>
+                                <td><img id="cover" src="https://wolnelektury.pl/media/{{ i['cover'] }}"></td>
+                                <td><a class="booklink" href="{{ i['url'] }}"><p class="text" id="title">{{ i['title'] }}</p></a></td>
+                                <td><p class="text">{{ i['author'] }}</p></td>
+                                <td><p class="text">{{ i['kind'] }}</p></td>
+                                <td><p class="text">{{ i['genre'] }}</p></td>
+                        </tr>
+                {% endfor %}
+
+                </table>
+        </div>
+{% endblock content %}
