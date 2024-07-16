@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Testing</title>
+    </head>
+    <body>
+        <a href="/"><div id="backdiv"><p id="goback">Go back</p></div></a>
+        {% for item in results %}
+            <div class="titlediv"><h1 class="titletext"><a href="{{ item['infoLink'] }}" target="_blank">{{ item['title'] }}</a></h1></div>
+            <h2 class="authors">Author/s: {{ item['authors']|join(", ") }} </h2>
+            <div class="descriptiondiv">Description:<br><br>
+
+                {% if item['description'] == "" %}
+                   - Missing -
+                {% endif %}
+
+                {{ item['description'] }}
+
+            </div><br><br>
+
+            <br><br><hr><br><br>
+        {% endfor %}
+    </body>
+</html>

@@ -1,0 +1,67 @@
+html{
+    min-height: 100%;
+    display: grid;
+}
+
+body {
+    text-align: center;
+    margin: auto;
+    font-family: "Century Gothic";
+}
+label, button, input {
+    font-size: 30px;
+}
+
+.titletext {
+    font-size: 40px;
+    transition: color 1s;
+}
+
+.titletext:hover {
+    color:darkgray;
+    transition: color 1s;
+}
+
+.authors {
+    font-size:20px;
+}
+
+#goback {
+    font-size: 40px;
+    position: fixed;
+    left:1%;
+    top:-1.5%;
+}
+
+.descriptiondiv{
+    font-size:15px;
+    width:70%;
+    display:block;
+    margin-inline:auto;
+}
+
+#backdiv {
+    position:fixed;
+    background-color:LightBlue;
+    width:12%;
+    height:12%;
+    border-bottom-right-radius: 60px 60px;
+    transition: background-color 1s;
+}
+
+#backdiv:hover{
+    background-color:teal;
+    transition: background-color 1s;
+}
+
+a, a:hover {
+    text-decoration:none;
+    color:inherit;
+}
+
+.titlediv{
+    display:block;
+    word-wrap: break-word;
+    width:50%;
+    margin:auto;
+}

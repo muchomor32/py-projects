@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Testing</title>
+    </head>
+    <body>
+        <div id="formdiv">
+            <form action="/search" method="POST">
+                <label for="q">Enter search query</label><br><br>
+                <input id="q" name="q" type="text"><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
