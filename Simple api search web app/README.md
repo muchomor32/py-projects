@@ -1,8 +1,11 @@
-Simple web app made using Flask and Google Books API
+# Simple web app made using Flask and Google Books API
 
-Requirements are in requirements.txt
+# Requirements are in requirements.txt
+```
+pip install -r requirements.txt
+```
 
-Before running:
+# Before running:
 ```
 1. pip install -U Flask
 2. pip install -U requests
@@ -10,7 +13,7 @@ Before running:
 4. set FLASK_ENV=development
 ```
 
-To run:
+# To run:
 ```
 flask run
 ```
